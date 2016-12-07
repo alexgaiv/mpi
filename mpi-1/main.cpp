@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	MPI_Init(&argc, &argv);
 	MPI_Comm_size(MPI_COMM_WORLD, &g_size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &g_rank);
-	
+
 	const int dataSize = argc >= 2 ? atoi(argv[1]) : 100;
 	int *data = NULL;
 
